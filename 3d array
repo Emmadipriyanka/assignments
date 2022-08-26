@@ -1,0 +1,63 @@
+#include<stdio.h>
+int main()
+{
+    int p=2,m=3,n=3;
+    int arr[p][m][n],i,j,k,sum=0;
+    printf("enter elements:");
+    for(i=0;i<p;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            for(k=0;k<n;k++)
+            {
+                scanf("%d",&arr[i][j][k]);
+            }
+        }
+    }
+    printf("matrix is:\n");
+    for(i=0;i<p;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            for(k=0;k<n;k++)
+            {
+                printf("%d\t",arr[i][j][k]);
+                sum=sum+arr[i][j][k];
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+    printf("sum=%d",sum);
+}
+
+output:
+
+enter elements:1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+matrix is:
+1	2	3	
+4	5	6	
+7	8	9	
+
+10	11	12	
+13	14	15	
+16	17	18	
+
+sum=171
