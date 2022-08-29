@@ -1,0 +1,26 @@
+#include<stdio.h>
+int priya_strlen(char *);
+int main()
+{
+    char s1[100];
+    printf("enter string:");
+    scanf("%s",s1);
+    int len=priya_strlen(s1);
+    printf("length of the string is %d",len);
+}
+int priya_strlen(char *p)
+{
+    int count=0;
+    while(*p!='\0')
+    {
+        p++;
+        count=count+1;
+    }
+    return count;
+}
+
+
+output:
+
+enter string:priyanka
+length of the string is 8
